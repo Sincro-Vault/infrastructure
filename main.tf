@@ -3,7 +3,7 @@ terraform {
   required_version = ">= 1.5.0"
   backend "s3" {
     bucket         = "vault-umb-terraform-state"
-    key            = "server/terraform.tfstate"
+    key            = "infrastructure/terraform.tfstate"
     region         = "us-east-2"
     encrypt        = true
   }
